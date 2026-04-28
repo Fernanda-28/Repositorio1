@@ -11,4 +11,8 @@ with open('resultados/log_operaciones.txt', 'w') as f:
     f.write(f"Resta: {resta(10, 5)}\n")
     f.write(f"Multiplicación: {multiplicacion(10, 5)}\n")
 
+
+
 print("Programa ejecutado: Archivo generado en la carpeta resultados/")
+
+import 
