@@ -1,11 +1,14 @@
+import os
 from funciones import suma, resta, multiplicacion
 
-resultado_suma = suma(10, 5)
-resultado_resta = resta(10, 5)
-resultado_multi = multiplicacion(10, 5)
+# Crear la carpeta resultados si no existe
+if not os.path.exists('resultados'):
+    os.makedirs('resultados')
 
-print(f"Suma: {resultado_suma}")
-print(f"Resta: {resultado_resta}")
-print(f"Multiplicación: {resultado_multi}")
+# Generar un archivo de texto dentro de la carpeta
+with open('resultados/log_operaciones.txt', 'w') as f:
+    f.write(f"Suma: {suma(10, 5)}\n")
+    f.write(f"Resta: {resta(10, 5)}\n")
+    f.write(f"Multiplicación: {multiplicacion(10, 5)}\n")
 
-print("Fin del programa")
+print("Programa ejecutado: Archivo generado en la carpeta resultados/")
