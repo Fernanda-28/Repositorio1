@@ -7,3 +7,5 @@ resultado_multi = multiplicacion(10, 5)
 print(f"Suma: {resultado_suma}")
 print(f"Resta: {resultado_resta}")
 print(f"Multiplicación: {resultado_multi}")
+
+print("Fin del programa")
