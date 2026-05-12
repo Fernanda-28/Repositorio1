@@ -15,4 +15,4 @@ with open('resultados/log_operaciones.txt', 'w') as f:
 
 print("Programa ejecutado: Archivo generado en la carpeta resultados/")
 
-import 
+print("hola")
